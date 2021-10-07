@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'IRANSansWeb_Bold';
+    src: url("../fonts/IRANSansWeb_Bold.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'IRANSansWeb_Light';
+    src: url("../fonts/IRANSansWeb_Light.woff2") format('woff2');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+input,
+textarea,
+a {
+    font-family: 'IRANSansWeb_Light';
+}
+
+body {
+    overflow-x: hidden;
+    text-align: center;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+
+.posts-img img {
+    width: 100%;
+    height: auto;
+}
+
+.posts-title h3 {
+    color: #333;
+    text-align: right;
+    font-family: 'IRANSansWeb_Bold';
+    line-height: 33px;
+    margin-top: 0 !important;
+}
+
+.posts-excerpt {
+    text-align: right;
+    color: #333;
+    line-height: 25px;
+}
+
+.home-page {
+    margin-top: 80px;
+}
+
+.posts-box-link {
+    transition: 0.2s;
+}
+
+.posts-box-link:hover {
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.posts-title {
+    font-family: 'IRANSansWeb_Bold';
+    text-align: right;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.posts-title-homepage {
+    font-family: 'IRANSansWeb_Bold';
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.posts-title-homepage h2 {
+    color: #333;
+    text-align: right;
+    font-family: 'IRANSansWeb_Bold';
+    line-height: 38px;
+    margin-top: 0 !important;
+}
+
+.posts-title-homepage h3 {
+    color: #333;
+    text-align: right;
+    font-family: 'IRANSansWeb_Bold';
+    line-height: 38px;
+    margin-top: 0 !important;
+}
+
+.posts-title-homepage h4 {
+    color: #333;
+    text-align: right;
+    font-family: 'IRANSansWeb_Bold';
+    line-height: 30px;
+    margin-top: 0 !important;
+}
+
+.posts-title-homepage h5 {
+    color: #777;
+    text-align: right;
+}
+
+.posts-p {
+    line-height: 30px;
+    text-align: right;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.share-content-blog .lefts_shares {
+    float: right !important;
+}
+
+.lefts_shares {
+    float: left;
+    height: 24px;
+    line-height: 24px;
+}
+
+.lefts_shares span {
+    float: right;
+}
+
+.lefts_shares ul {
+    width: 140px;
+    float: left;
+    display: block;
+    margin-left: 0;
+}
+
+.lefts_shares ul li {
+    list-style-type: none;
+}
+
+.linkedin_shares {
+    color: #5059da !important;
+    font-size: 22px;
+}
+
+.twitter_shares {
+    color: #5059da !important;
+    font-size: 22px;
+}
+
+.telegram_shares {
+    color: #5059da !important;
+    font-size: 22px;
+}
+
+.clear_iranthemes {
+    clear: both;
+    padding: 10px 0;
+}
+
+.share-content-blog {
+    padding: 10px 0 0 0;
+}
+
+.lefts_shares ul li {
+    float: left;
+    margin-right: 3px;
+    width: 24px;
+    height: 24px;
+}
+
+.post-img {
+    margin: 40px 0 40px 0;
+}
+
+.post-img img {
+    width: 80%;
+    height: auto;
+}
+
+.posts-title-h4 {
+    text-align: right;
+}
+
+.posts-box {
+    padding-top: 20px;
+    border-top: 2px solid #f1f1f1;
+    margin-top: 20px;
+}
+
+.top-posts {
+    margin-bottom: 50px;
+}
+
+.footer {
+    border-top: 2px solid #f1f1f1;
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.copy-right {
+    text-align: right;
+}
