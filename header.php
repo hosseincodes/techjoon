@@ -9,23 +9,26 @@
 <head>
 
     <?php
-if ( is_plugin_active( 'wordpress-seo/wp-seo.php' ) ) {
-  ?>
-    <title><?php wp_title(); ?></title>
-    <?php
-}else{
-?>
-    <?php if ( is_home()){ ?>
-    <title><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
-    <?php } elseif (is_404()) {
+        if ( is_plugin_active( 'wordpress-seo/wp-seo.php' ) ) {
     ?>
-    <title>خطای 404 | چیزی یافت نشد | <?php bloginfo('name'); ?></title>
-    <?php
-  }
-     else{ ?>
-    <title><?php the_title(); ?> | <?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
-    <?php }
-} ?>
+
+    <title><?php wp_title(); ?></title>
+
+    <?php } else{ ?>
+
+    <?php if ( is_home()){ ?>
+
+    <title><?php bloginfo('name'); ?></title>
+
+    <?php } elseif (is_404()) { ?>
+
+    <title>404 | <?php bloginfo('name'); ?></title>
+
+    <?php } else{ ?>
+
+    <title><?php the_title(); ?> | <?php bloginfo('name'); ?></title>
+
+    <?php }} ?>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">

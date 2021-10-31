@@ -66,12 +66,12 @@ get_header(); ?>
             <div class="row">
                 <a class="posts-box-link" href=<?php the_permalink(); ?>>
                     <div class="posts-box">
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="posts-img">
                                 <?php the_post_thumbnail('single-post-thumbnail'); ?>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="posts-title-homepage">
                                 <h3><?php the_title() ?></h3>
                                 <h5><?php the_time('d F Y'); ?></h5>
