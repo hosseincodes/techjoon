@@ -52,7 +52,7 @@ body {
 }
 
 .home-page {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .posts-box-link {
@@ -196,7 +196,8 @@ body {
     border-top: 2px solid #f1f1f1;
     margin-top: 15px;
     padding-top: 15px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
+    direction: ltr;
 }
 
 .copy-right {
