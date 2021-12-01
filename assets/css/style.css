@@ -185,7 +185,7 @@ body {
 .posts-box {
     padding-top: 20px;
     border-top: 2px solid #f1f1f1;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .top-posts {
@@ -202,4 +202,44 @@ body {
 
 .copy-right {
     text-align: right;
+}
+
+@media only screen and (max-width: 992px) {
+    .mini-view {
+        display: none;
+    }
+
+    .top-posts {
+        margin-bottom: 0px;
+    }
+
+    .responsive-pc {
+        display: none;
+    }
+
+    .responsive-mobile {
+        display: block !important;
+    }
+
+    .home-page {
+        margin-top: 0px;
+    }
+
+    .posts-img {
+        margin-bottom: 10px;
+    }
+
+    .posts-p {
+        font-size: 18px;
+    }
+}
+
+.responsive-mobile {
+    display: none;
+}
+
+.moblie-h4 {
+    font-weight: 900;
+    text-align: right;
+    margin-top: 20px;
 }
