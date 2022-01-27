@@ -71,6 +71,11 @@ body {
     margin-bottom: 30px;
 }
 
+.pst-mini-view {
+    border-top: 2px solid #f1f1f1;
+    padding: 15px;
+}
+
 .posts-title-homepage {
     font-family: 'IRANSansWeb_Bold';
     text-align: right;
@@ -91,6 +96,7 @@ body {
     font-family: 'IRANSansWeb_Bold';
     line-height: 38px;
     margin-top: 0 !important;
+    font-size: 20px;
 }
 
 .posts-title-homepage h4 {
@@ -104,6 +110,7 @@ body {
 .posts-title-homepage h5 {
     color: #777;
     text-align: right;
+    font-size: 12px;
 }
 
 .posts-p {
@@ -188,10 +195,6 @@ body {
     margin-top: 10px;
 }
 
-.top-posts {
-    margin-bottom: 50px;
-}
-
 .footer {
     border-top: 2px solid #f1f1f1;
     margin-top: 15px;
@@ -242,4 +245,30 @@ body {
     font-weight: 900;
     text-align: right;
     margin-top: 20px;
+}
+
+.logo {
+    text-align: left;
+}
+
+.logo-description {
+    text-align: left;
+}
+
+.logo-box {
+    direction: ltr;
+    line-height: 30px;
+    border: 2px solid #f1f1f1;
+    padding: 15px 15px 5px 15px;
+    margin: 10px;
+}
+
+.date-box {
+    border: 2px solid #f1f1f1;
+    padding: 15px 15px 5px 15px;
+    margin: 10px;
+}
+
+.logo-box a {
+    color: #333;
 }

@@ -7,84 +7,78 @@ get_header(); ?>
     <div class="container responsive-pc">
         <div class="row">
             <div class="col-md-8">
-                <div class="top-posts">
-                    <?php
-                        $my_query = new WP_Query( array( 
-                            'category_name' => 'top-posts', 
-                            'posts_per_page' => 1 
-                        ) ); 
-                        while ($my_query->have_posts()):
-                        $my_query->the_post();
-                        $do_not_duplicate = $post->ID;?>
+                <div class="posts">
+                <?php
+                    $my_query = new WP_Query( array( 
+                        'category_name' => 'posts', 
+                        'posts_per_page' => 9 
+                    ) ); 
+                    while ($my_query->have_posts()):
+                    $my_query->the_post();
+                    $do_not_duplicate = $post->ID;?>
 
-                    <a class="posts-box-link" href=<?php the_permalink(); ?>>
-                        <div class="top-posts-box">
-                            <div class="posts-title-homepage">
-                                <h2><?php the_title() ?></h2>
-                                <h5><?php the_time('d F Y'); ?></h5>
+                    <div class="row">
+                        <a class="posts-box-link" href=<?php the_permalink(); ?>>
+                            <div class="posts-box">
+                                <div class="col-md-3">
+                                    <div class="posts-img">
+                                        <?php the_post_thumbnail('single-post-thumbnail'); ?>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="posts-title-homepage">
+                                        <h3><?php the_title() ?></h3>
+                                        <h5><?php the_time('d F Y'); ?></h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="posts-excerpt">
+                                        <?php the_excerpt();?>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="posts-img">
-                                <?php the_post_thumbnail('single-post-thumbnail'); ?>
-                            </div> 
-                        </div>
-                    </a><?php endwhile; ?>
+                        </a>
+                    </div><?php endwhile; ?>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="mini-view">
-                    <?php
-                        $my_query = new WP_Query( array( 
-                            'category_name' => 'mini-view', 
-                            'posts_per_page' => 5 
-                        ) ); 
-                        while ($my_query->have_posts()):
-                        $my_query->the_post();
-                        $do_not_duplicate = $post->ID;?>
-
-                    <a class="posts-box-link" href=<?php the_permalink(); ?>>
-                        <div class="top-posts-box">
-                            <div class="posts-title-homepage">
-                                <h4><?php the_title() ?></h4>
-                            </div>
-                        </div>
-                    </a><?php endwhile; ?>
+                <div class="logo-box">
+                    <div class="logo">
+                        <a style="font-size: 16px; margin-left: 10px;" href="http://techjoon.ir">TechJoon 🍑</a>
+                    </div>
+                    <div class="logo-description">
+                        <p style="font-size: 14px; margin-left: 10px;">The beauty of the tech world! <a href="http://twitter.com/TechJoon/" target="_blank"><i
+                        style="font-size: 14px;" class="fab fa-twitter"></i></a></p>
+                    </div>
+                </div>
+                <div class="date-box">
+                    <p><?php echo date('l d F Y , H:i:s'); ?></p>
                 </div>
             </div>
         </div>
 
-        <div class="posts">
-            <?php
-                $my_query = new WP_Query( array( 
-                    'category_name' => 'posts', 
-                    'posts_per_page' => 9 
-                ) ); 
-                while ($my_query->have_posts()):
-                $my_query->the_post();
-                $do_not_duplicate = $post->ID;?>
+        <!-- <div class="row">
+            <div class="mini-view">
+                <?php
+                    $my_query = new WP_Query( array( 
+                        'category_name' => 'mini-view', 
+                        'posts_per_page' => 5 
+                    ) ); 
+                    while ($my_query->have_posts()):
+                    $my_query->the_post();
+                    $do_not_duplicate = $post->ID;?>
 
-            <div class="row">
                 <a class="posts-box-link" href=<?php the_permalink(); ?>>
-                    <div class="posts-box">
-                        <div class="col-md-3">
-                            <div class="posts-img">
-                                <?php the_post_thumbnail('single-post-thumbnail'); ?>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="posts-title-homepage">
-                                <h3><?php the_title() ?></h3>
-                                <h5><?php the_time('d F Y'); ?></h5>
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="posts-excerpt">
-                                <?php the_excerpt();?>
-                            </div>
+                    <div class="top-posts-box">
+                        <div class="posts-title-homepage pst-mini-view">
+                            <h4><?php the_title() ?></h4>
                         </div>
                     </div>
-                </a>
-            </div><?php endwhile; ?>
-        </div>
+                </a><?php endwhile; ?>
+            </div>
+        </div> -->
+
+        
     </div>
     
     <div class="container responsive-mobile">
