@@ -35,6 +35,7 @@ body {
 .posts-img img {
     width: 100%;
     height: auto;
+    border-radius: 15px;
 }
 
 .posts-title h3 {
@@ -72,14 +73,12 @@ body {
 }
 
 .pst-mini-view {
-    border-top: 2px solid #f1f1f1;
     padding: 15px;
 }
 
 .posts-title-homepage {
     font-family: 'IRANSansWeb_Bold';
     text-align: right;
-    margin-bottom: 30px;
 }
 
 .posts-title-homepage h2 {
@@ -261,14 +260,121 @@ body {
     border: 2px solid #f1f1f1;
     padding: 15px 15px 5px 15px;
     margin: 10px;
+    border-radius: 15px;
 }
 
 .date-box {
     border: 2px solid #f1f1f1;
     padding: 15px 15px 5px 15px;
     margin: 10px;
+    border-radius: 15px;
+}
+
+.donate-box {
+    border: 2px solid #f1f1f1;
+    padding: 10px 15px 10px 15px;
+    margin: 10px;
+    border-radius: 15px;
+    direction: ltr;
+}
+
+.donate-box a {
+    color: #333;
 }
 
 .logo-box a {
     color: #333;
+}
+
+.services-img {
+    width: 100%;
+}
+
+.services-box {
+    background: #fff;
+    border: 2px solid #f1f1f1;
+    padding: 10px 15px 20px 15px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.github-project-box {
+    background: #fff;
+    border: 2px solid #f1f1f1;
+    padding: 10px 15px 20px 15px;
+    border-radius: 15px;
+    margin: 10px;
+    text-align: left;
+}
+
+.github-project-box p {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.services-link-moreInfo {
+    color: #333;
+    border: 2px solid #f1f1f1;
+    padding: 5px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+}
+
+.services-box h5 {
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
+.services-box p {
+    margin-bottom: 25px;
+}
+
+.services-title {
+    padding: 15px 0 15px 0;
+    text-align: right;
+    font-weight: 400;
+    color: #202124;
+}
+
+.github-box-title {
+    padding: 15px 0 15px 0;
+    text-align: right;
+    font-weight: 400;
+    color: #fff;
+}
+
+.services {
+    background: #f8f9fa;
+    padding: 15px;
+}
+
+.International-accounts {
+    padding: 15px;
+}
+
+.github-box {
+    background: #22272e;
+    padding: 15px;
+}
+
+.github-tags {
+    color: #fff;
+    background-color: #263549;
+    margin: 5px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.github-link {
+    color: #333;
+    font-weight: bold;
+}
+
+.bitcoin-icon {
+    color: #ffc107;
+}
+
+.mini-view {
+    padding: 15px;
 }
